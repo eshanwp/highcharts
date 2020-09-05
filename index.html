@@ -1,0 +1,3992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" lang="en" xml:lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <title>Model: Market Neutral Tech Hedged --1 Year Thursday</title>
+    <link type='text/css' rel="stylesheet" href="asset/css/bootstrap537a.css?_debugResources=y&amp;n=1599128294185"/>
+    <link type='text/css' rel="stylesheet" media="screen"
+          href="asset/css/style537a.css?_debugResources=y&amp;n=1599128294185"/>
+    <link type='text/css' rel="print stylesheet" media="print"
+          href="asset/css/print537a.css?_debugResources=y&amp;n=1599128294185"/>
+    <script type="text/javascript" src="asset/js/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="asset/highcharts/highstock537a.js?_debugResources=y&amp;n=1599128294185"></script>
+    <script type="text/javascript"
+            src="asset/highcharts/highcharts-more537a.js?_debugResources=y&amp;n=1599128294185"></script>
+    <script type="text/javascript"
+            src="asset/highcharts/highstock.qd.extend537a.js?_debugResources=y&amp;n=1599128294185"></script>
+    <script type="text/javascript" src="asset/modules/timeline537a.js?_debugResources=y&amp;n=1599128294185"></script>
+    <script type="text/javascript" src="asset/js/underscore-min537a.js?_debugResources=y&amp;n=1599128294185"></script>
+    <script type="text/javascript" src="asset/js/application537a.js?_debugResources=y&amp;n=1599128294185"></script>
+    <script type="text/javascript" src="asset/js/sample-data.js"></script>
+<!--    <script type="text/javascript" src="asset/js/performance_chart_summary.js"></script>-->
+</head>
+<body>
+<div class="container">
+    <div class="row-fluid">
+        <div class="span9" style="vertical-align: middle">
+            <h1 style="margin-top:20px;margin-bottom:5px;line-height:24px">Model: Market Neutral Tech Hedged --1 Year
+                Thursday by Lucena Research</h1>
+            <div style="font-size:1.8em;margin-top:10px;">Performance 12/31/12 - 2/10/20</div>
+        </div>
+        <div class="span3" style="text-align: right;padding-top: 10px">
+            <img style="text-align: right" src=asset/img/lucena-research537a.png?_debugResources=y&amp;n=1599128294185
+                 alt="logo"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12 greenHeaderSlim" style="margin-bottom: 0">
+            Investment Approach
+        </div>
+        <div class="span12 standout">
+            Model: Tech Hedge Market Neutral
+            <p>
+                The strategy identifies large cap Technology winners and hedges them with equal short allocation by
+                identifying a set of uncorrelated constituents. The hedger uses Lucena's proprietary pattern matching
+                technology geared to identify which constituents exhibit inverse price behavior (relative to the
+                market). When adding the short positions to the core holdings we in turn get a nice smooth low vol
+                return that accrues over time.<br>
+                Hedge positions are selected from the Russell 1000.<br>
+                The portfolio re-assess its positions every week. It also holds between 10 and 20 positions with max
+                allocation of 15 per position.<br>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12 greenHeaderSlim">Performance Versus Benchmark 12/31/12 to 2/10/20</div>
+    </div>
+    <div class="row-fluid">
+        <!-- FIFTH ROW content -->
+        <div class="span6">
+            <div style="border: 1px solid #000" id="performance_chart_summary_"></div>
+            <div style="border-left: 1px solid #000;border-right: 1px solid #000;border-bottom: 1px solid #000"
+                 id="performance_by_year_chart_summary_"></div>
+        </div>
+        <div class="span6">
+            <!--Performance Versus Benchmark Table-->
+            <div class="row-fluid">
+                <div id="stats">
+                    <table id="bigBlueTable" cellpadding="4" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td class="small center blueheader"></td>
+                            <td class="small center blueheader">Strategy Overall</td>
+                            <td class="small center blueheader">Bench Overall</td>
+                            <td class="small center blueheader">Strategy TTM</td>
+                            <td class="small center blueheader end">Bench TTM</td>
+                        </tr>
+                        </thead>
+                        <tbody class="performanceVersusBenchmarkTable">
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                if (sampleData.performanceVersusBenchmarkTbl != null) {
+                                    var html = '';
+                                    $.each(sampleData.performanceVersusBenchmarkTbl, function (index, val) {
+                                        var rowColorCss = (++index / 2 === 1) ? "lightBlue" : "mediumBlue";
+                                        html += "<tr class=" + rowColorCss + ">\n" +
+                                            "                           <td>" + val.col + "</td>\n" +
+                                            "                           <td>" + val.strategyOverall + "</td>\n" +
+                                            "                           <td>" + val.benchOveral + "</td>\n" +
+                                            "                           <td>" + val.strategyTTM + "</td>\n" +
+                                            "                           <td>" + val.benchTTM + "</td>\n" +
+                                            "                        </tr>";
+                                    });
+                                    $(html).appendTo('.performanceVersusBenchmarkTable');
+                                }
+                            });
+                        </script>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--Historical Summary Table-->
+            <div class="row-fluid" style="margin-top:13px;margin-bottom:2px"><strong>Historical Summary</strong></div>
+            <div class="row-fluid">
+                <div id="overallstats">
+                    <table id="bigBlueTable" cellpadding="4" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td class="small center blueheader"></td>
+                            <td class="small center blueheader">1 Yr</td>
+                            <td class="small center blueheader">2 Yr</td>
+                            <td class="small center blueheader">3 Yr</td>
+                            <td class="small center blueheader">5 Yr</td>
+                            <td class="small center blueheader end">10 Yr</td>
+                        </tr>
+                        </thead>
+                        <tbody class="historicalSummary">
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                if (sampleData.historicalSummaryTbl != null) {
+                                    var html = '';
+                                    $.each(sampleData.historicalSummaryTbl, function (index, val) {
+                                        var rowColorCss = (++index / 2 === 1) ? "lightBlue" : "mediumBlue";
+                                        html += "<tr class=" + rowColorCss + ">\n" +
+                                            "                            <td>" + val.col + "</td>\n" +
+                                            "                            <td>" + val.Yr1 + "</td>\n" +
+                                            "                            <td>" + val.Yr2 + "</td>\n" +
+                                            "                            <td>" + val.Yr3 + "</td>\n" +
+                                            "                            <td>" + val.Yr5 + "</td>\n" +
+                                            "                            <td>" + val.Yr10 + "</td>\n" +
+                                            "                        </tr>";
+                                    });
+                                    $(html).appendTo('.historicalSummary');
+                                }
+                            });
+                        </script>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--Performance Versus Benchmark Chart 1-->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+            $(function () {
+
+               var yAxisOption =
+                       {
+                          labels: {
+                             formatter: function () {
+                                var sign;
+                                sign = this.value > 0 ? '+' : '';
+                                return "" + sign + this.value + "%";
+                             },
+                             style: {
+                                fontSize: 7
+                             }
+                          },
+                          tickPixelInterval: 24
+                       };
+               var xAxisOption =
+                       {
+                          labels: {
+                             style: {
+                                fontSize: 7
+                             }
+                          }
+                       };
+
+               var chart = new Highcharts.StockChart({
+                  chart: {
+                     renderTo: 'performance_chart_summary_',
+                     height: 183,
+                     backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                  },
+                  exporting: {
+                     buttons: {
+                        printButton: {
+                           enabled: false
+                        },
+                        exportButton: {
+                           enabled: false
+                        }
+
+                     }
+                  },
+                  rangeSelector: false,
+                  scrollbar: false,
+                  navigator: false,
+                  credits: {enabled: false},
+                  yAxis: yAxisOption,
+                  xAxis: xAxisOption,
+                  plotOptions: {
+                     series: {
+                        compare: 'percent'
+                     },
+                     line: {
+                        lineWidth: 2
+                     }
+                  },
+                  legend: {
+                     backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                     borderWidth: 1,
+                     align: 'left',
+                     floating: 'false',
+                     verticalAlign: 'top',
+                     y: 3,
+                     x: 3,
+                     itemStyle: {
+                        fontSize: 7
+                     },
+                     layout: 'vertical',
+                     enabled: true
+                  },
+                  series: sampleData.performanceSummaryChart
+               });
+            });
+        });
+        //]]>
+    </script>
+   <!--Performance Versus Benchmark Chart 2-->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function () {
+            var chart;
+            var finalYear = 0;
+            try {
+                finalYear = 2020;
+            } catch (e) {
+                //
+            }
+            var stringRepeat = function (repeat, count) {
+                count = Math.round(count);
+                return new Array(count + 1).join(repeat);
+            }
+
+            $(document).ready(function () {
+                chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'performance_by_year_chart_summary_',
+                        type: 'column',
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        height: 183
+                    },
+                    title: {
+                        text: null
+                    },
+
+                    xAxis: {
+                        categories: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+                        labels: {
+                            formatter: function () {
+                                return this.value
+                            },
+                            style: {
+                                fontSize: 7
+                            }
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        buttons: {
+
+                            printButton: {
+                                enabled: false
+                            },
+                            exportButton: {
+                                enabled: false
+                            }
+
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: null
+                        },
+                        labels: {
+
+                            style: {
+                                fontSize: 7
+                            }
+                        }
+                    },
+                    legend: {
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        borderWidth: 1,
+                        align: 'left',
+                        floating: 'false',
+                        verticalAlign: 'top',
+                        y: -7,
+                        x: 30,
+                        layout: 'vertical',
+                        itemStyle: {
+                            fontSize: 7
+                        },
+                        symbolHeight: 4,
+                        enabled: true
+                    },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.02,
+                            borderWidth: 0,
+                            dataLabels: {
+                                enabled: true,
+                                //                            rotation: 270,
+                                align: 'center',
+                                x: 0,
+                                y: 0,
+                                crop: true,
+                                overflow: 'none',
+                                formatter: function () {
+                                    var num = this.y
+                                    var precision = 1;
+                                    if (Math.abs(num) >= 10)
+                                        precision = 0;
+                                    var numStr = this.y.toFixed(precision) + '%';// Math.round(this.y * 100) / 100 + '%'
+                                    //                                var formatSpace = ' ';//a space that obeys formatting in SVG
+                                    //                                var formatSpace = '';//a space that obeys formatting in SVG
+                                    //                                if (this.y >= 0)
+                                    //
+                                    //                                    return stringRepeat(formatSpace, numStr.length * 2.5) +  numStr;
+                                    //                                else
+                                    //                                    return numStr + stringRepeat(formatSpace, numStr.length * 2);
+                                    return numStr;
+                                },
+                                style: {
+                                    fontSize: '6',
+                                    fontFamily: 'Verdana, sans-serif',
+                                    fontWeight: 'normal'
+                                    //textShadow: '0 0 1px black'
+                                }
+                            }
+                        }
+                    },
+                    tooltip: {
+                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}%</b><br/>',
+                        valueDecimals: 2
+                    },
+                    series: sampleData.performanceBarSummaryChart
+                });
+            });
+        });
+        //]]>
+
+    </script>
+
+    <div class="row">
+        <div class="span12 greenHeaderSlim">Performance Attribution</div>
+    </div>
+    <div class="row">
+        <!-- FIFTH ROW content -->
+        <div class="span4">
+            <div class="charttitle">Risk/Return versus benchmark</div>
+            <div id="risk_return_chart_summary_" style="border: 1px solid #000"></div>
+        </div>
+        <div class="span8">
+            <div class="charttitle">Monthly Return Comparison Trailing 12 Months</div>
+            <div id="performance_by_ttm_chart_summary_" style="border: 1px solid #000"></div>
+            <table id="smallBlueTable" cellpadding="2" cellspacing="0"
+                   style="border-collapse: collapse;margin-top:5px ">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th class="center">Mar</th>
+                    <th class="center">Apr</th>
+                    <th class="center">May</th>
+                    <th class="center">Jun</th>
+                    <th class="center">Jul</th>
+                    <th class="center">Aug</th>
+                    <th class="center">Sep</th>
+                    <th class="center">Oct</th>
+                    <th class="center">Nov</th>
+                    <th class="center">Dec</th>
+                    <th class="center">Jan</th>
+                    <th class="center">Feb</th>
+                    <th class="center">Total</th>
+                </tr>
+                </thead>
+                <tbody class="monthlyReturnComparisonTrailing12MonthsTbl">
+                <script type="text/javascript">
+                   $(document).ready(function () {
+                      if (sampleData.monthlyReturnComparisonTrailing12MonthsTbl != null) {
+                         var html = '';
+                         $.each(sampleData.monthlyReturnComparisonTrailing12MonthsTbl, function (index, val) {
+                            var rowColorCss = (++index / 2 === 1) ? "lightBlue" : "mediumBlue";
+                            html += "<tr class="+rowColorCss+">\n" +
+                                    "                   <td style=\"text-align:left\">"+val.col+"</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.mar) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.mar+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.apr) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.apr+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.may) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.may+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.jun) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.jun+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.jul) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.jul+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.aug) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.aug+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.sep) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.sep+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.oct) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.oct+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.nov) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.nov+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.dec) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.dec+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.jan) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.jan+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.feb) >= 0 ? "color: green;text-align:right" : "color: red;text-align:right")+"'>"+val.feb+"%</td>\n" +
+                                    "                   <td style='"+( Math.sign(val.total) >= 0 ? "color: green" : "color: red")+"' class=\"end\">"+val.total+"%</td>\n" +
+                                    "                </tr>";
+                         });
+                         $(html).appendTo('.monthlyReturnComparisonTrailing12MonthsTbl');
+                      }
+                   });
+                </script>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end FIFTH ROW content -->
+    <div style="page-break-after:always;">&nbsp;&nbsp;</div>
+    <div class="row">
+        <div class="span12 greenHeaderSlim">Perspective on Performance</div>
+    </div>
+    <div class="row">
+        <div class="span12 standout">
+            <li>Over its five years backtest, the portfolio exhibits returns every year.</li>
+            <li>Max drawdown of -13.2% and a Sharpe Ratio of 1.20.</li>
+            <li>Over 5 years its average annual return stands at over 20%</li>
+            <li>The portfolio is uncorrelated to the S&P with an R^2 of 0.01 and IR of 0.22.</li>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12 standout"></div>
+    </div>
+</div>
+<!--Risk/Return versus benchmark Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            var chart;
+            $(document).ready(function () {
+                chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'risk_return_chart_summary_',
+                        type: 'scatter',
+                        zoomType: 'xy',
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        height: 225
+                        //                    width:300
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        title: {
+                            enabled: true,
+                            text: 'Daily Standard Deviation',
+                            style: {
+                                fontSize: 7
+                            }
+                        },
+
+                        startOnTick: true,
+                        endOnTick: true,
+                        showLastLabel: true,
+                        lineColor: '#000000',
+                        lineWidth: 2,
+                        labels: {
+                            style: {
+                                fontSize: 7
+                            }
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Daily Return',
+                            style: {
+                                fontSize: 7
+                            }
+                        },
+                        gridLineColor: 'transparent',
+                        lineColor: '#000000',
+                        lineWidth: 2,
+                        labels: {
+                            style: {
+                                fontSize: 7
+                            }
+                        }
+                    },
+                    legend: {
+                        enabled: true,
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        borderWidth: 1,
+                        align: 'right',
+                        floating: 'false',
+                        verticalAlign: 'top',
+                        y: 0,
+                        x: 0,
+                        itemStyle: {
+                            fontSize: 7
+                        },
+                        layout: 'vertical'
+                    },
+                    plotOptions: {
+                        scatter: {
+                            marker: {
+                                radius: 4,
+                                states: {
+                                    hover: {
+                                        enabled: true,
+                                        lineColor: 'rgb(100,100,100)'
+                                    }
+                                },
+                                symbol: 'circle'
+                            },
+
+                            states: {
+                                hover: {
+                                    marker: {
+                                        enabled: true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        buttons: {
+                            printButton: {
+                                enabled: false
+                            },
+                            exportButton: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    series: sampleData.riskReturnVersusBenchmarkChart
+                });
+            });
+        });
+    });
+    //]]>
+</script>
+
+<!--Monthly Return Comparison Trailing 12 Months Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(function () {
+        var chart;
+        $(document).ready(function () {
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'performance_by_ttm_chart_summary_',
+                    type: 'column',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    height: 135
+                },
+                title: {
+                    text: null
+                },
+                xAxis: {
+                    categories: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
+                    labels: {
+                        formatter: function () {
+                            return this.value
+                        },
+                        style: {
+                            fontSize: 7
+                        }
+                    }
+
+                },
+                credits: {
+                    enabled: false
+                },
+                exporting: {
+                    buttons: {
+                        printButton: {
+                            enabled: false
+                        },
+                        exportButton: {
+                            enabled: false
+                        }
+
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: null
+                    },
+                    labels: {
+
+                        style: {
+                            fontSize: 7
+                        }
+                    }
+                },
+                legend: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 1,
+                    align: 'left',
+                    floating: 'false',
+                    verticalAlign: 'top',
+                    y: -7,
+                    x: 30,
+                    layout: 'vertical',
+                    itemStyle: {
+                        fontSize: 7
+                    },
+                    symbolHeight: 4,
+                    enabled: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.02,
+                        borderWidth: 0,
+                        dataLabels: {
+                            enabled: false,
+                            //                            rotation: 270,
+                            align: 'center',
+                            x: 0,
+                            y: 0,
+                            crop: true,
+                            overflow: 'none',
+                            formatter: function () {
+                                var num = this.y
+                                var precision = 1;
+                                if (Math.abs(num) >= 10)
+                                    precision = 0;
+                                var numStr = this.y.toFixed(precision) + '%';// Math.round(this.y * 100) / 100 + '%'
+                                //                                var formatSpace = ' ';//a space that obeys formatting in SVG
+                                //                                var formatSpace = '';//a space that obeys formatting in SVG
+                                //                                if (this.y >= 0)
+                                //
+                                //                                    return stringRepeat(formatSpace, numStr.length * 2.5) +  numStr;
+                                //                                else
+                                //                                    return numStr + stringRepeat(formatSpace, numStr.length * 2);
+                                return numStr;
+                            },
+                            style: {
+                                fontSize: '6',
+                                fontFamily: 'Verdana, sans-serif',
+                                //textShadow: '0 0 1px black'
+                            }
+                        }
+                    }
+                },
+                tooltip: {
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}%</b><br/>',
+                    valueDecimals: 2
+                },
+                series: sampleData.monthlyReturnComparisonTrailing12MonthsChart
+            });
+        });
+    });
+    //]]>
+</script>
+</body>
+
+</html>
+<div style="page-break-before:always;"></div>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" lang="en" xml:lang="en">
+<head>
+</head>
+<body>
+<div id="settings-jump" class="container">
+    <div class="row-fluid">
+        <div class="span9" style="vertical-align: middle">
+            <h1 style="margin-top:20px;margin-bottom:5px;line-height:24px">Model: Market Neutral Tech Hedged --1 Year
+                Thursday</h1>
+            <div style="font-size:1.8em;margin-top:10px;">Strategy Performance Analysis by Lucena Research</div>
+        </div>
+        <div class="span3" style="text-align: right;padding-top: 10px">
+            <img style="text-align: right" src=asset/img/lucena-research537a.png?_debugResources=y&amp;n=1599128294185
+                 alt="logo"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12 greenHeaderSlim">
+            Performance Report
+        </div>
+    </div>
+    <div class="row">
+        <!-- SECOND ROW content -->
+        <div class="span8">
+            <!-- SECOND ROW / left column -->
+            <div class="charttitle">Performance Chart</div>
+            <div id="performance_chart" style="border: 1px solid #000"></div>
+        </div>
+        <div class="span4">
+            <!-- SECOND ROW / right column -->
+            <div class="charttitle">Correlation</div>
+            <div id="industry_correlation_chart" style="border: 1px solid #000"></div>
+            <div class="charttitle">Beta</div>
+            <div id="industry_beta_chart" style="border: 1px solid #000"></div>
+        </div>
+    </div>
+    <!-- end SECOND ROW content -->
+    <div class="row" style="margin-top:20px">
+        <div class="span12 greenHeaderSlim">
+            Exposure
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <div id="exposure" style="border: 1px solid #000"></div>
+        </div>
+    </div>
+    <div style="page-break-after:always;">&nbsp;&nbsp;</div>
+    <div class="row-fluid" style="margin-top:20px">
+        <div class="span6 greenHeaderSlimPartial">
+            Value At Risk
+        </div>
+        <div class="span6 greenHeaderSlimPartial">
+            Rolling Stats
+        </div>
+    </div>
+    <div class="row-fluid" style="margin-top:12px">
+        <div class="span6">
+            <div id="valueAtRisk" style="border: 1px solid #000"></div>
+        </div>
+        <div class="span6">
+            <div id="rollingStats" style="border: 1px solid #000"></div>
+        </div>
+    </div>
+    <div class="row-fluid" style="margin-top:20px">
+        <div class="span12 greenHeaderSlimPartial">
+            Return Attributions
+        </div>
+    </div>
+    <div class="row-fluid" style="margin-top:12px">
+        <div class="span12">
+            <div id="returnAttribution" style="border: 1px solid #000"></div>
+        </div>
+    </div>
+    <div class="row-fluid" style="margin-top:20px">
+        <div class="span12 greenHeaderSlimPartial">Participation and Contribution</div>
+    </div>
+
+    <div class="row">
+        <div class="participationAndContributionTbl"></div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                if (sampleData.participationAndContributionTbl != null) {
+                    var html = "";
+                    $.each(sampleData.participationAndContributionTbl, function (index, tables) {
+                        html += "<div class=\"span4\">\n" +
+                            "            <table cellpadding=\"0\" cellspacing=\"0\">\n" +
+                            "                <thead>\n" +
+                            "                <tr>\n" +
+                            "                    <th colspan=\"2\">"+tables.tableName+"</th>\n" +
+                            "                </tr>\n" +
+                            "                </thead><tbody>";
+                        $.each(tables.tableData, function (index2, val) {
+                            var rowColorCss = (++index2 / 2 == 1) ? "lightBlue" : "mediumBlue";
+                            html += "<tr class="+rowColorCss+">\n" +
+                                "                    <td>"+val.col1+"</td>\n" +
+                                "                    <td class=\"right\" style=\"color:green\">"+val.col2+"</td>\n" +
+                                "                </tr>";
+                        });
+
+                        html += "</tbody></table>\n" +
+                            "        </div>";
+
+                    });
+                    $(html).appendTo('.participationAndContributionTbl');
+                }
+            });
+        </script>
+    </div>
+
+    <div style="page-break-after:always;">&nbsp;&nbsp;</div>
+    <!-- FIRST ROW -->
+    <div class="row-fluid">
+        <!-- FIRST ROW header -->
+        <div class="span4 greenHeaderSlimPartial">
+            <!-- left column header -->
+            Simulation Settings
+        </div>
+        <div class="span8 greenHeaderSlimPartial">
+            <!-- right column header -->
+            Strategy Settings
+        </div>
+    </div>
+    <div class="row-fluid">
+        <!-- FIRST ROW content - Simulation Settings Table -->
+        <div class="span4">
+            <div class="simulationSettings"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    if (sampleData.simulationSettingsTbl != null) {
+                        var html = "";
+                        $.each(sampleData.simulationSettingsTbl, function (index, tables) {
+                            html += "<table cellpadding=\"0\" cellspacing=\"0\">\n" +
+                                "                <thead>\n" +
+                                "                <tr>\n" +
+                                "                    <th colspan=\"2\">"+tables.tableName+"</th>\n" +
+                                "                </tr>\n" +
+                                "                </thead><tbody>";
+                            $.each(tables.tableData, function (index2, val) {
+                                var rowColorCss = (index2 / 2 == 1) ? "lightBlue" : "mediumBlue";
+                                html += "<tr class="+rowColorCss+">\n" +
+                                    "                    <td>"+val.col1+"</td>\n" +
+                                    "                    <td class=\"right\">"+val.col2+"</td>\n" +
+                                    "                </tr>";
+                            });
+
+                            html += "</tbody></table>";
+
+                        });
+                        $(html).appendTo('.simulationSettings');
+                    }
+                });
+            </script>
+        </div>
+        <div class="span4">
+            <!-- FIRST ROW / middle column  - Strategy Settings Table-->
+            <div class="strategySettings"></div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    if (sampleData.strategySettingsTbl != null) {
+                        var html = "";
+                        $.each(sampleData.strategySettingsTbl, function (index, tables) {
+                            html += "<table cellpadding=\"0\" cellspacing=\"0\">\n" +
+                                "                <thead>\n" +
+                                "                <tr>\n" +
+                                "                    <th colspan=\"2\">"+tables.tableName+"</th>\n" +
+                                "                </tr>\n" +
+                                "                </thead><tbody>";
+                            $.each(tables.tableData, function (index2, val) {
+                                var rowColorCss = (index2 / 2 == 1) ? "lightBlue" : "mediumBlue";
+                                html += "<tr class="+rowColorCss+">\n" +
+                                    "                    <td>"+val.col1+"</td>\n" +
+                                    "                    <td class=\"right\">"+val.col2+"</td>\n" +
+                                    "                </tr>";
+                            });
+
+                            html += "</tbody></table>";
+
+                        });
+                        $(html).appendTo('.strategySettings');
+                    }
+                });
+            </script>
+
+        </div>
+        <div class="span4">
+            <!-- FIRST ROW / right column -->
+        </div>
+    </div>
+    <!-- end FIRST ROW content -->
+    <div class="row-fluid">
+        <!-- SECOND ROW header -->
+    </div>
+    <div style="page-break-after:always;">&nbsp;&nbsp;</div>
+    <div class="row">
+        <!-- SECOND ROW header -->
+        <div class="span12 greenHeaderSlim">
+            Performance Metrics
+        </div>
+    </div>
+    <div class="row">
+        <!-- SECOND ROW content -->
+        <div class="span6">
+            <!-- SECOND ROW / left column -->
+            <div class="charttitle">Transaction Cost:</div>
+            <table id="mediumBlueTable" cellpadding="4" cellspacing="1">
+                <tbody>
+                <tr>
+                    <td class="lightBlue">Commissions</td>
+                    <td
+                            class="lightBlue right" width="28%">$82,631.82
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Slippage</td>
+                    <td
+                            class="mediumBlue right" width="28%">$126,112.23
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Borrowing Costs</td>
+                    <td
+                            class="lightBlue right" width="28%">$0.00
+                    </td>
+                <tr>
+                    <td class="mediumBlue"><b>Total Transaction Costs</b></td>
+                    <td
+                            class="mediumBlue right" width="28%">$208,744.05
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="span6">
+            <div class="charttitle">Transaction Analysis:</div>
+            <table id="mediumBlueTable" cellpadding="4" cellspacing="1">
+                <!-- table: Transaction costs since inception -->
+                <tbody>
+                <tr>
+                    <td class="lightBlue">Number of Transactions</td>
+                    <td class="lightBlue right" width="28%">9,671</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Average Trade Hold Days (Weighted)</td>
+                    <td class="mediumBlue right" width="28%">
+                        20.00
+                        (10.76)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">% Successful Transactions (Weighted)</td>
+                    <td class="lightBlue right" width="28%">
+                        51.57%
+                        (50.50%)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">% Hit Stop Loss</td>
+                    <td class="mediumBlue right" width="28%">0.00%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">% Hit Stop Gain</td>
+                    <td class="lightBlue right" width="28%">0.00%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Profit Ratio</td>
+                    <td class="mediumBlue right" width="28%">1.09</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 15px;">
+        <div class="span6">
+            <!-- SECOND ROW / right column -->
+            <div class="charttitle">Monthly Performance Metrics:</div>
+            <table id="mediumBlueTable" cellpadding="4" cellspacing="1">
+                <!-- table: Transaction costs since inception -->
+                <tbody>
+                <tr>
+                    <td class="lightBlue">Days of Outperformance</td>
+                    <td class="lightBlue right" width="28%">48.38%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Months of Outperformance</td>
+                    <td
+                            class="mediumBlue right" width="28%">51.16%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Most Consecutive Months of Outperformance</td>
+                    <td
+                            class="lightBlue right" width="28%">5
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Most Consecutive Months of Underperformance</td>
+                    <td
+                            class="mediumBlue right" width="28%">4
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="span6">
+            <div class="charttitle">Benchmark Relative Metrics:</div>
+            <table id="mediumBlueTable" cellpadding="4" cellspacing="1">
+                <!-- table: Transaction costs since inception -->
+                <tbody>
+                <tr>
+                    <td class="lightBlue">Beta</td>
+                    <td
+                            class="lightBlue right" width="28%">0.11
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Information Ratio</td>
+                    <td
+                            class="mediumBlue right" width="28%">0.22
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">R^2</td>
+                    <td
+                            class="lightBlue right" width="28%">0.01
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Tracking Error</td>
+                    <td
+                            class="mediumBlue right" width="28%">1.14%
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 15px">
+        <div class="span12">
+            <div class="charttitle">Performance Metrics:</div>
+            <table id="mediumBlueTable" cellpadding="4" cellspacing="1">
+                <thead>
+                <tr>
+                    <th width="20%" class="left bigblueheader">Portfolio</th>
+                    <th width="13%" class="center bigblueheader">Return</th>
+                    <th width="13%" class="center bigblueheader">Sharpe</th>
+                    <th width="13%" class="center bigblueheader">Sortino</th>
+                    <th width="13%" class="center bigblueheader">Alpha</th>
+                    <th width="13%" class="center bigblueheader">Standard Dev</th>
+                    <th width="13%" class="center bigblueheader">Max DrawDown</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="lightBlue">Core</td>
+                    <td
+                            class="lightBlue right">206.82%
+                    </td>
+                    <td
+                            class=" lightBlue right">0.63
+                    </td>
+                    <td
+                            class="lightBlue right">0.93
+                    </td>
+                    <td class="lightBlue right">0.52</td>
+                    <td class="lightBlue right">2.14%</td>
+                    <td class="lightBlue right">-21.07%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Hedge</td>
+                    <td
+                            class="mediumBlue right">210.69%
+                    </td>
+                    <td
+                            class=" mediumBlue right">0.69
+                    </td>
+                    <td
+                            class="mediumBlue right">1.00
+                    </td>
+                    <td class="mediumBlue right">3.34</td>
+                    <td class="mediumBlue right">1.84%</td>
+                    <td class="mediumBlue right">-18.70%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Fund</td>
+                    <td
+                            class="lightBlue right">208.76%
+                    </td>
+                    <td
+                            class=" lightBlue right">1.20
+                    </td>
+                    <td
+                            class="lightBlue right">1.81
+                    </td>
+                    <td class="lightBlue right">1.94</td>
+                    <td class="lightBlue right">0.88%</td>
+                    <td class="lightBlue right">-13.42%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Benchmark</td>
+                    <td
+                            class="mediumBlue right">135.04%
+                    </td>
+                    <td
+                            class=" mediumBlue right">1.00
+                    </td>
+                    <td
+                            class="mediumBlue right">1.27
+                    </td>
+                    <td class="mediumBlue right">0.00</td>
+                    <td class="mediumBlue right">0.81%</td>
+                    <td class="mediumBlue right">-19.78%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px">
+        <div class="span12">
+            <table id="mediumBlueTable" cellpadding="4" cellspacing="1">
+                <thead>
+                <tr>
+                    <th width="20%" class="left bigblueheader">Portfolio</th>
+                    <th width="20%" class="center bigblueheader">Initial</th>
+                    <th width="20%" class="center bigblueheader">Adjusted Final</th>
+                    <th width="20%" class="center bigblueheader">Adjusted Return</th>
+                    <th width="20%" class="center bigblueheader">Compound Annual Return</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="lightBlue">Core</td>
+                    <td
+                            class="lightBlue right">N/A
+                    </td>
+                    <td
+                            class=" lightBlue right">$3,068K
+                    </td>
+                    <td
+                            class="lightBlue right">$1,034K
+                    </td>
+                    <td class="lightBlue right">17.09%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Hedge</td>
+                    <td
+                            class="mediumBlue right">N/A
+                    </td>
+                    <td
+                            class=" mediumBlue right">$3,107K
+                    </td>
+                    <td
+                            class="mediumBlue right">$1,053K
+                    </td>
+                    <td class="mediumBlue right">17.29%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Fund</td>
+                    <td
+                            class="lightBlue right">$1,000K
+                    </td>
+                    <td
+                            class=" lightBlue right">$3,088K
+                    </td>
+                    <td
+                            class="lightBlue right">$2,088K
+                    </td>
+                    <td class="lightBlue right">17.19%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Benchmark</td>
+                    <td
+                            class="mediumBlue right">$1,000K
+                    </td>
+                    <td
+                            class=" mediumBlue right">$2,350K
+                    </td>
+                    <td
+                            class="mediumBlue right">$1,350K
+                    </td>
+                    <td class="mediumBlue right">12.78%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div style="page-break-after:always;">&nbsp;&nbsp;</div>
+    <div class="row">
+        <div class="span12 greenHeaderSlim">
+            Performance Metrics By Year
+        </div>
+    </div>
+    <div class="row">
+        <!-- SIXTH ROW content -->
+        <div class="span12">
+            <table id="bigTable" cellpadding="4" cellspacing="1">
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="tanheader center">2013</td>
+                    <td class="tanheader center">2014</td>
+                    <td class="tanheader center">2015</td>
+                    <td class="tanheader center">2016</td>
+                    <td class="tanheader center">2017</td>
+                    <td class="tanheader center">2018</td>
+                    <td class="tanheader center">2019</td>
+                    <td class="tanheader center">2020</td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">Return</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:green">21.87%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.53%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">20.24%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">33.21%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">9.89%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">4.60%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">13.25%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">20.87%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">21.87%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.53%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">18.81%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">32.94%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">11.19%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">7.11%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">10.84%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">20.11%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">29.60%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">11.39%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.73%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">9.54%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">19.42%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-6.24%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">28.88%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.75%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">21.87%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.53%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">21.67%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">33.48%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">8.62%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.10%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">15.77%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">21.63%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">Winning Days</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:green">51.00%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">50.00%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">55.16%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">54.76%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">52.99%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">52.78%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">50.40%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">59.26%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">52.99%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">53.97%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">50.79%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">54.76%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">54.18%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">51.19%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">54.37%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">66.67%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">58.33%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">57.14%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">47.22%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">51.98%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">57.20%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">52.59%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">59.52%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">62.96%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">52.19%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">46.83%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">49.60%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">51.98%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">49.40%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">47.22%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">50.40%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">59.26%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">Sharpe</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:green">1.17</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.10</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">2.01</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.67</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.83</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.44</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.05</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">5.79</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.73</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.17</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.73</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.87</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.55</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.37</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.48</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.09</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.39</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.03</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.76</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.69</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.29</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.09</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.80</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.74</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.16</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.91</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.03</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.52</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.22</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.63</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">5.89</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">Sortino</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:green">1.68</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.15</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">3.44</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">2.93</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.10</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.66</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.60</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">7.65</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.96</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.24</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.18</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.42</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.69</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.60</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.73</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.30</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.41</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.31</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.04</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.99</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.60</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.36</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.58</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.60</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.93</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.23</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.20</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.55</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.76</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.32</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.05</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">24.30</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">Max DD</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:red">-10.26%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-8.40%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-6.71%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-9.47%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-8.84%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-7.93%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-7.35%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-5.00%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-14.95%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-19.16%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-15.15%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-14.96%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-12.41%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-18.64%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-12.71%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-11.59%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-5.76%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-7.40%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-12.35%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-10.51%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-2.80%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-19.78%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-6.84%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-3.13%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-16.73%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-13.82%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-12.06%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-13.48%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-8.29%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-13.79%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-11.59%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-3.02%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">Alpha</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:green">0.21</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:red">-0.00</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.20</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.32</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.09</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.06</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.09</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.19</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.08</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.13</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.20</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.23</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.12</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.14</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.28</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.15</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.48</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.13</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.21</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.42</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.30</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:red">-0.02</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.46</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.23</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">St. Dev.</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:green">1.15%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.61%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.59%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.14%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.77%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.74%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.79%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.91%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.24%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.90%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.86%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.72%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.60%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.26%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.96%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.72%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.70%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.71%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.97%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.82%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.42%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.07%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.78%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.76%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.18%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.74%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.57%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.11%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.24%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.93%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.92%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.94%</span>
+                    </td>
+                </tr>
+                <!-- tracking error-->
+                <tr>
+                    <td rowspan="4" class="tanheader titleheader">Tracking Error</td>
+                    <td class="subheader">Strategy</td>
+                    <td class="lightTan">
+                        <span style="color:green">1.32%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.91%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.06%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.36%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">0.87%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.16%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.04%</span>
+                    </td>
+                    <td class="lightTan">
+                        <span style="color:green">1.98%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Core</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.13%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.71%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.42%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.56%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.51%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.95%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.68%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">3.58%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Benchmark</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">0.00%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sub2header">Hedge</td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.47%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.14%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.30%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.52%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">1.44%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.55%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.37%</span>
+                    </td>
+                    <td class="mediumBlueCell">
+                        <span style="color:green">2.22%</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end FIFTH ROW content -->
+    <div style="page-break-after:always;">&nbsp;&nbsp;</div>
+    <div class="row">
+        <div class="span12 greenHeaderSlim">
+            Monthly Return to Benchmark By Year
+        </div>
+    </div>
+    <div class="row">
+        <!-- SEVENTH ROW content -->
+        <div class="span12">
+            <table cellpadding="3" cellspacing="1">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th style="text-align:right">Jan</th>
+                    <th style="text-align:right">Feb</th>
+                    <th
+                            style="text-align:right">Mar
+                    </th>
+                    <th style="text-align:right">Apr</th>
+                    <th
+                            style="text-align:right">May
+                    </th>
+                    <th style="text-align:right">Jun</th>
+                    <th
+                            style="text-align:right">Jul
+                    </th>
+                    <th style="text-align:right">Aug</th>
+                    <th
+                            style="text-align:right">Sep
+                    </th>
+                    <th style="text-align:right">Oct</th>
+                    <th
+                            style="text-align:right">Nov
+                    </th>
+                    <th style="text-align:right">Dec</th>
+                    <th
+                            style="text-align:right">Total
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2013</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-2.13%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.07%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-0.99%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">5.26%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">6.57%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">4.95%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.80%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">6.63%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">4.50%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.65%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-3.57%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-2.89%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">21.87%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:green;text-align:right">5.04%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">1.11%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">3.60%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.81%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">2.08%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-1.50%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">4.95%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-3.13%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">2.97%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">4.46%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">2.80%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">2.36%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">29.60%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-7.17%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-2.18%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-4.59%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">3.45%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">4.49%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">6.45%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-2.14%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">9.76%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">1.53%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-3.81%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-6.38%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-5.24%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-7.73%</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2014</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">1.45%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">6.22%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-4.50%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">1.13%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.41%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.44%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-3.26%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.57%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-0.80%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">1.01%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-0.24%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.61%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.53%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-3.56%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">4.31%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.69%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.62%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">2.10%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.91%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-1.51%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">3.77%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-1.55%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">2.32%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">2.45%
+                    </td>
+                    <td class="lightBlue" style="color:red;text-align:right">-0.42%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">11.39%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">5.01%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">1.91%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-5.19%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">0.51%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-1.70%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-3.34%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-1.76%</td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-1.20%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">0.75%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-1.31%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-2.69%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-1.19%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-10.86%</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2015</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.33%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">1.60%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-3.60%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.39%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.01%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">3.47%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.72%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.51%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">5.67%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.17%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.64%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">4.74%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">20.24%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-3.10%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">5.49%
+                    </td>
+                    <td class="lightBlue" style="color:red;text-align:right">-1.74%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.85%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.05%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-2.10%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.97%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-6.26%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-2.64%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">8.30%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">0.05%
+                    </td>
+                    <td class="lightBlue" style="color:red;text-align:right">-1.75%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-0.73%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">1.78%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-3.89%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-1.86%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-0.46%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">0.96%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">5.57%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">0.74%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">4.75%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">8.31%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-6.13%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.59%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">6.49%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">20.97%
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2016</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-2.17%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-3.55%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.91%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">11.02%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">8.08%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.26%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">4.08%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.96%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.07%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.68%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.62%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">6.48%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">33.21%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-5.07%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-0.41%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">6.60%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.27%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.53%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.09%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">3.56%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-0.12%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-0.12%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-1.94%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">3.42%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">1.82%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">9.54%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.90%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-3.14%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-3.69%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">10.75%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">6.55%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.17%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">0.52%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">3.08%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-0.95%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.62%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-5.04%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">4.66%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">23.68%
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2017</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-2.38%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">8.42%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">3.40%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">3.03%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.73%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.77%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-3.94%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">1.82%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-2.04%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.85%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-0.41%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.36%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">9.89%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.79%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">3.72%
+                    </td>
+                    <td class="lightBlue" style="color:red;text-align:right">-0.04%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.91%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.16%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.48%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.93%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.05%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">1.93%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">2.22%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">2.81%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">0.98%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">19.42%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-4.17%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">4.70%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">3.44%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.12%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-0.43%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-2.25%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-5.87%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">1.76%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-3.97%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">0.63%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-3.22%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-0.62%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-9.53%</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2018</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">3.08%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">1.48%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-2.78%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.77%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.41%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.29%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-2.88%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">3.07%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">3.50%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-3.60%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.28%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.15%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">4.60%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:green;text-align:right">5.62%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-3.89%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-2.69%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.27%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">2.16%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.48%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">3.60%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">3.03%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">0.43%
+                    </td>
+                    <td class="lightBlue" style="color:red;text-align:right">-6.94%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">1.79%
+                    </td>
+                    <td class="lightBlue" style="color:red;text-align:right">-9.18%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-6.24%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-2.54%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">5.37%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-0.09%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.50%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">0.25%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-1.77%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-6.48%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">0.04%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">3.07%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">3.34%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-1.50%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">8.03%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">10.84%
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2019</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-5.15%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.81%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">1.20%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.69%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.45%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-1.18%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">3.94%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.42%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">2.69%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">5.78%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">0.67%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">-0.72%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">13.25%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:green;text-align:right">7.87%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">2.97%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.79%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">3.93%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-6.58%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">6.89%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">1.31%</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-1.81%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">1.72%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">2.04%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">3.40%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">2.86%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">28.88%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-13.02%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-4.79%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-0.59%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-1.24%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">9.03%</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-8.07%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.63%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">4.23%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">0.98%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">3.74%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-2.74%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">-3.58%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">-15.63%</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;font-weight:bold">2020</td>
+                    <td class="heavyBlue">Strategy</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">13.45%</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">6.54%</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="heavyBlue" style="color:green;text-align:right">20.87%</td>
+                </tr>
+                <tr>
+                    <td class="lightBlue">Benchmark</td>
+                    <td class="lightBlue" style="color:red;text-align:right">-0.16%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">3.92%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.00%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.00%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.00%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.00%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.00%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.00%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">0.00%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">0.00%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">0.00%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">0.00%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">3.75%</td>
+                </tr>
+                <tr>
+                    <td class="mediumBlue">Relative Return</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">13.61%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">2.62%
+                    </td>
+                    <td class="mediumBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="mediumBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">N/A
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">N/A
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">N/A
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">N/A
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:red;text-align:right">N/A
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">17.11%
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12 greenHeaderSlim">
+            Monthly Return for Core By Year
+        </div>
+    </div>
+    <div class="row">
+        <!-- SEVENTH ROW content -->
+        <div class="span12">
+            <table cellpadding="3" cellspacing="1">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th style="text-align:right">Jan</th>
+                    <th style="text-align:right">Feb</th>
+                    <th
+                            style="text-align:right">Mar
+                    </th>
+                    <th style="text-align:right">Apr</th>
+                    <th
+                            style="text-align:right">May
+                    </th>
+                    <th style="text-align:right">Jun</th>
+                    <th
+                            style="text-align:right">Jul
+                    </th>
+                    <th style="text-align:right">Aug</th>
+                    <th
+                            style="text-align:right">Sep
+                    </th>
+                    <th style="text-align:right">Oct</th>
+                    <th
+                            style="text-align:right">Nov
+                    </th>
+                    <th style="text-align:right">Dec</th>
+                    <th
+                            style="text-align:right">Total
+                    </th>
+                </tr>
+                </thead>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="font-weight:bold">2013</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-2.53%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-2.02%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.52%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">9.62%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.41%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">6.17%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.41%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">6.67%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">3.67%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.44%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-1.62%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-3.03%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">21.87%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2014</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.34%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">5.58%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-3.51%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.17%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">1.03%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.43%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-6.81%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">5.48%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-3.29%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">6.75%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-4.95%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.46%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.53%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2015</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-1.36%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.04%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-2.23%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-2.42%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">3.11%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.11%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">6.75%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.70%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.74%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.85%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">3.46%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">4.02%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">18.81%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2016</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.85%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-3.72%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.23%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">3.76%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">17.96%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.70%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">3.59%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.42%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.58%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.57%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-2.00%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">5.00%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">32.94%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2017</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-1.35%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.59%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">7.30%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.03%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.01%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-4.15%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-5.88%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">7.96%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-3.81%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">4.55%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.47%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.98%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">11.19%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2018</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">3.30%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">1.48%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.65%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">1.53%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.67%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.01%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-2.13%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.85%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">4.95%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-4.11%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.00%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.69%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">7.11%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2019</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-5.64%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-3.22%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.75%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.06%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.18%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.52%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.34%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">4.74%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.08%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">6.50%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.40%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.16%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">10.84%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2020</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">11.83%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">7.40%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">20.11%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end SEVENTH ROW content -->
+    <div class="row">
+        <div class="span12 greenHeaderSlim">
+            Monthly Return for Hedge By Year
+        </div>
+    </div>
+    <div class="row">
+        <!-- SEVENTH ROW content -->
+        <div class="span12">
+            <table cellpadding="3" cellspacing="1">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th style="text-align:right">Jan</th>
+                    <th style="text-align:right">Feb</th>
+                    <th
+                            style="text-align:right">Mar
+                    </th>
+                    <th style="text-align:right">Apr</th>
+                    <th
+                            style="text-align:right">May
+                    </th>
+                    <th style="text-align:right">Jun</th>
+                    <th
+                            style="text-align:right">Jul
+                    </th>
+                    <th style="text-align:right">Aug</th>
+                    <th
+                            style="text-align:right">Sep
+                    </th>
+                    <th style="text-align:right">Oct</th>
+                    <th
+                            style="text-align:right">Nov
+                    </th>
+                    <th style="text-align:right">Dec</th>
+                    <th
+                            style="text-align:right">Total
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="font-weight:bold">2013</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-1.73%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.12%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-2.45%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.89%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">12.19%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">3.76%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">3.20%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">6.59%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.34%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.73%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-5.45%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-2.74%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">21.87%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2014</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.57%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">6.88%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-5.50%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.47%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.21%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-2.46%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.40%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.23%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">1.73%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-4.52%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">4.84%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-2.73%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.53%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2015</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-1.29%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.16%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-4.95%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">3.25%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.96%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.79%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-1.07%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-3.75%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">8.77%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">3.49%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.84%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.45%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">21.67%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2016</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-7.08%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-3.37%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">6.29%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">18.36%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-0.68%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">3.90%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">4.58%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">3.50%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-1.56%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">0.78%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-1.24%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">7.96%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">33.48%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2017</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-3.39%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">11.23%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.27%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">4.05%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.46%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.61%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-2.08%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-3.81%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.22%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.16%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.34%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.73%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">8.62%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2018</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.85%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">1.48%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-4.91%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">4.07%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">4.19%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-2.57%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-3.64%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">5.35%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.07%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-3.08%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-1.43%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">-1.62%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">2.10%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2019</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-4.65%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.36%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-0.35%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.41%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">2.71%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-3.82%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.60%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">0.09%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.60%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">5.07%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">1.74%</td>
+                    <td class="mediumBlue" style="color:#E03C39;text-align:right">-1.60%</td>
+                    <td class="mediumBlue" style="color:#39724F;text-align:right">15.77%</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold">2020</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">15.06%</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">5.71%</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#E03C39;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:#39724F;text-align:right">21.63%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end SEVENTH ROW content -->
+    <div class="row">
+        <div class="span12 greenHeaderSlim">
+            Monthly Turnover For Strategy By Year
+        </div>
+    </div>
+    <div class="row">
+        <!-- EIGHTH ROW content -->
+        <div class="span12">
+            <table cellpadding="3" cellspacing="1">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th style="text-align:right">Jan</th>
+                    <th style="text-align:right">Feb</th>
+                    <th
+                            style="text-align:right">Mar
+                    </th>
+                    <th style="text-align:right">Apr</th>
+                    <th
+                            style="text-align:right">May
+                    </th>
+                    <th style="text-align:right">Jun</th>
+                    <th
+                            style="text-align:right">Jul
+                    </th>
+                    <th style="text-align:right">Aug</th>
+                    <th
+                            style="text-align:right">Sep
+                    </th>
+                    <th style="text-align:right">Oct</th>
+                    <th
+                            style="text-align:right">Nov
+                    </th>
+                    <th style="text-align:right">Dec</th>
+                    <th
+                            style="text-align:right">Total
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2013</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">159.60%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">141.16%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">178.54%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">135.81%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">156.97%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">111.51%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">142.09%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">178.96%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">163.26%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">176.47%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">138.97%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">175.04%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">1,858.40%</td>
+                </tr>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2014</td>
+                    <td class="lightBlue" style="color:green;text-align:right">206.15%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">126.58%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">191.51%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">155.06%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">236.65%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">138.55%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">219.30%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">206.24%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">196.31%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">247.70%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">201.32%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">135.38%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">2,260.75%</td>
+                </tr>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2015</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">219.27%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">154.75%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">162.81%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">176.00%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">168.69%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">154.51%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">232.04%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">224.39%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">202.69%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">277.30%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">187.22%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">156.44%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">2,316.11%</td>
+                </tr>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2016</td>
+                    <td class="lightBlue" style="color:green;text-align:right">152.12%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">176.79%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">232.62%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">124.77%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">127.59%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">200.52%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">102.60%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">163.22%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">161.21%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">123.32%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">199.60%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">132.69%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">1,897.04%</td>
+                </tr>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2017</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">140.90%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">97.84%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">134.61%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">168.28%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">209.93%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">184.31%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">178.75%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">232.23%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">197.45%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">213.48%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">199.61%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">128.16%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">2,085.56%</td>
+                </tr>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2018</td>
+                    <td class="lightBlue" style="color:green;text-align:right">145.68%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">197.21%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">187.32%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">127.70%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">223.96%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">160.28%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">139.57%</td>
+                    <td class="lightBlue" style="color:green;text-align:right">229.52%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">133.95%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">171.86%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">276.73%
+                    </td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">152.85%
+                    </td>
+                    <td class="lightBlue" style="color:green;text-align:right">2,146.63%</td>
+                </tr>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2019</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">242.57%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">141.91%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">94.57%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">141.53%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">153.19%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">143.14%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">106.41%</td>
+                    <td class="mediumBlue" style="color:green;text-align:right">212.22%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">186.03%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">223.44%</td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">178.03%
+                    </td>
+                    <td class="mediumBlue"
+                        style="color:green;text-align:right">110.08%
+                    </td>
+                    <td class="mediumBlue" style="color:green;text-align:right">1,933.13%</td>
+                </tr>
+                <tr>
+                    <td class="rightBorder" style="vertical-align: top;font-weight:bold">2020</td>
+                    <td class="lightBlue" style="color:green;text-align:right">117.22%</td>
+                    <td class="lightBlue"
+                        style="color:green;text-align:right">34.13%
+                    </td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:red;text-align:right">N/A</td>
+                    <td class="lightBlue" style="color:green;text-align:right">151.35%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end EIGHTH ROW content -->
+</div>
+<div class="container">
+    <div style="page-break-after:always;">&nbsp;&nbsp;</div>
+    <div class="row">
+        <div style="margin-top: 25px" class="span12 disclaimer">
+            <h1>DISCLAIMER PERTAINING TO CONTENT DELIVERED & INVESTMENT ADVICE</h1>
+            <p><b>Simulation/Data Guidelines:</b> Backtest simulations use adjusted pricing data to reflect split,
+                reverse split and dividends. Dividends are automatically reinvested. Trade executions are evaluated
+                daily using open, high, low, close and total volume points. Stop losses and total return limits do not
+                consider intraday price changes. Trade executions may assume unattainable prices in live trading.
+                Backtests that have run through the current date may contain trades based on intraday data for the last
+                date. All data used by backtest simulation is subject to change or correction, and backtest results may
+                vary at different run times. Trade decisions made by Lucena's proprietary technologies are also subject
+                to change due to alterations of underlying algorithms. Backtest results should not be considered
+                reproducible at a later point in time. Backtest results may contain in-sample and out-of-sample periods
+                and do not reflect a real actively-managed portfolio.​
+            </p>
+            <p><b>Disclaimer:</b> This information has been prepared by Lucena Research Inc. and is intended for
+                informational purposes only. This information should not be construed as investment, legal and/or tax
+                advice. Additionally, this content is not intended as an offer to sell or a solicitation of any
+                investment product or service.
+            </p>
+            <p><b>Please note:</b> Lucena is a technology company and not a certified investment advisor. Do not take
+                the opinions expressed explicitly or implicitly in this communication as investment advice. The opinions
+                expressed are of the author and are based on statistical forecasting based on historical data analysis.
+                Past performance does not guarantee future success. In addition, the assumptions and the historical data
+                based on which an opinion is made could be faulty. All results and analyses expressed are hypothetical
+                and are NOT guaranteed. All Trading involves substantial risk. Leverage Trading has large potential
+                reward but also large potential risk. Never trade with money you cannot afford to lose. If you are
+                neither a registered nor a certified investment professional this information is not intended for you.
+                Please consult a registered or a certified investment advisor before risking any capital.
+            </p>
+            <p>The information contained above is provided for informational and educational purposes only, and nothing
+                contained herein should be construed as investment advice, either on behalf of a particular security or
+                an overall investment strategy. Neither Lucena Research Inc. nor any of its affiliates makes any
+                recommendation to buy or sell any security or any representation about the financial condition of any
+                company. Actual results may differ materially from those expressed or implied. Past performance is not
+                indicative of future results. Investors should undertake their own due diligence and carefully evaluate
+                companies before investing. ADVICE FROM A SECURITIES PROFESSIONAL IS STRONGLY ADVISED. &copy; 2018.
+                Lucena Research, Inc. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<!--Correlation Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            $(document).ready(function () {
+                categories = [];
+                $.each(sampleData.correlationChart, function (i, v) {
+                    return categories.push(v.name);
+                });
+                var chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'industry_correlation_chart',
+                        type: 'bar',
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        height: 237
+                    },
+                    title: {
+                        text: null,
+                        style: {
+                            color: "#000000",
+                            fontFamily: 'Karla',
+                            fontSize: 19,
+                            fontWeight: 'bold'
+                        }
+
+                    },
+                    xAxis: {
+                        categories: categories,
+                        title: {
+                            text: null
+                        },
+                        gridLineColor: 'transparent',
+                        lineColor: '#000000',
+                        lineWidth: 2
+
+                    },
+                    yAxis: {
+                        min: -1,
+                        max: 1,
+                        minTickInterval: .25,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            overflow: 'justify'
+                        },
+                        gridLineColor: 'transparent',
+                        lineColor: '#000000',
+                        lineWidth: 2
+                    },
+                    plotOptions: {
+                        bar: {
+                            dataLabels: {
+                                enabled: true,
+                                style: {fontWeight: 'normal'}
+                            },
+                            color: '#516249'
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        buttons: {
+
+                            printButton: {
+                                enabled: false
+                            },
+                            exportButton: {
+                                enabled: false
+                            }
+
+                        }
+                    },
+                    series: [
+                        {
+                            data: sampleData.correlationChart, showInLegend: false, name: "Correlation"
+                        }
+                    ]
+                });
+            });
+        });
+    });
+    //]]>
+</script>
+<!--Beta Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            var chart;
+            $(document).ready(function () {
+                categories = [];
+                $.each(sampleData.betaChart, function (i, v) {
+                    return categories.push(v.name);
+                });
+                chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'industry_beta_chart',
+                        type: 'bar',
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        height: 238
+                    },
+                    title: {
+                        text: null,
+                        style: {
+                            color: "#000000",
+                            fontFamily: 'Karla',
+                            fontSize: 19,
+                            fontWeight: 'bold'
+                        }
+
+                    },
+                    xAxis: {
+                        categories: categories,
+                        title: {
+                            text: null
+                        },
+                        gridLineColor: 'transparent',
+                        lineColor: '#000000',
+                        lineWidth: 2
+
+                    },
+                    yAxis: {
+                        //                    min:0,
+                        minTickInterval: .25,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            overflow: 'justify'
+                        },
+                        gridLineColor: 'transparent',
+                        lineColor: '#000000',
+                        lineWidth: 2
+                    },
+                    plotOptions: {
+                        bar: {
+                            dataLabels: {
+                                enabled: true,
+                                style: {fontWeight: 'normal'}
+                            },
+                            color: '#b12d2e'
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        buttons: {
+                            printButton: {
+                                enabled: false
+                            },
+                            exportButton: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    series: [
+                        {
+                            data: sampleData.betaChart, showInLegend: false, name: "Beta"
+                        }
+                    ]
+                });
+            });
+        });
+    });
+    //]]>
+</script>
+<!--Performance Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            series = sampleData.performanceChart;
+            if (sampleData.performanceChartNumberOfPositions != null) {
+                numOfPositions = {
+                    name: '#Positions',
+                    data: sampleData.performanceChartNumberOfPositions,
+                    color: "LawnGreen",
+                    type: 'column',
+                    dataGrouping: {
+                        approximation: "average",
+                        units: [['day', [1]]],
+                        enabled: true
+                    },
+                    yAxis: 1
+                };
+                series.push(numOfPositions);
+            }
+
+            var yAxisOption =
+                [
+                    {
+                        labels: {
+                            formatter: function () {
+                                var sign;
+                                sign = this.value > 0 ? '+' : '';
+                                return "" + sign + this.value + "%";
+                            }
+                        },
+                        height: '75%'
+                    }, {
+                    title: {
+                        style: {
+                            color: 'gray'
+                        }
+                    },
+                    labels: {
+                        style: {
+                            color: 'LawnGreen'
+                        }
+                    },
+                    top: '80%',
+                    height: '20%',
+
+                    showLastLabel: true
+                }
+                ]
+
+            var chart = new Highcharts.StockChart({
+                chart: {
+                    renderTo: 'performance_chart',
+                    height: 499,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                },
+                exporting: {
+                    buttons: {
+                        printButton: {
+                            enabled: false
+                        },
+                        exportButton: {
+                            enabled: false
+                        }
+
+                    }
+                },
+                rangeSelector: false,
+                scrollbar: false,
+                navigator: false,
+                credits: {enabled: false},
+                yAxis: yAxisOption,
+                plotOptions: {
+                    series: {
+                        compare: 'percent'
+                    },
+                    line: {
+                        lineWidth: 2
+                    }
+                },
+                legend: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 1,
+                    enabled: true
+                },
+                tooltip: {
+                    formatter: function () {
+                        var s;
+                        var netliqVal;
+                        var tempDate;
+                        s = '<text x="8" y="21" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#FFF;fill:#FFF;" zIndex="1">';
+                        s += '<tspan style="font-size: 10px" x="8">' + Highcharts.dateFormat('%A, %b %e, %Y', this.x) + '</tspan><br/>';
+                        _.each(this.points, function (p) {
+
+                            var sign;
+                            s += '<span style="color:' + p.series.color + '" x="8" dy="16">' + p.series.name + '</span>';
+                            if (p.series.name !== '#Events' && p.series.name !== '#Positions' && p.series.name !== 'Strategy') {
+                                sign = "";
+                                if (p.point.change > 0) {
+                                    sign = '+';
+                                }
+                                s += '<span dx="0">: </span><tspan style="font-weight:bold" dx="0">' + p.point.y.formatMoney() + '</span>';
+                                return s += '<span dx="0"> (' + sign + (p.point.change / 100).formatPercent() + ')</span><br/>';
+                            } else if (p.series.name === 'Strategy') {
+
+                                // if (!!netliqMap) {
+                                //
+                                // } else {
+                                if (!!netliqMap && netliqArray.length > 0) {
+                                    try {
+                                        tempDate = new Date(p.point.x);
+                                        tempDate.setDate(tempDate.getDate() + 1);
+                                        netliqVal = netliqMap[tempDate.toDateString()];
+                                    } catch (e) {
+                                        netliqVal = null;
+                                    }
+                                }
+                                sign = "";
+                                if (p.point.change > 0) {
+                                    sign = '+';
+                                }
+                                s += '<span dx="0">: </span><tspan style="font-weight:bold" dx="0">' + p.point.y.formatMoney() + '</span>';
+                                s += '<span dx="0"> (' + sign + (p.point.change / 100).formatPercent() + ')</span><br/>';
+                                // if (!!netliqMap) {
+                                //
+                                // } else {
+                                if (!!netliqMap && netliqArray.length > 0) {
+                                    var tempS = "";
+                                    tempS += '<span style="color:#000000" x="8" dy="16">Net Liquidation</span>';
+                                    try {
+                                        tempS += '<span dx="0">: </span><tspan style="font-weight:bold" dx="0">' + netliqVal.formatMoney() + '</span>';
+
+                                    } catch (e) {
+                                        // tempS="";
+                                    }
+                                    tempS += '<br/>';
+                                    s += tempS;
+                                }
+                                return s;
+                            } else {
+                                return s += '<span dx="0">: </span><tspan style="font-weight:bold" dx="0">' + p.point.y + '</span><br/>';
+                            }
+                        });
+                        s += '</text>';
+                        return s;
+                    }
+                },
+                series: series
+            });
+            /*chart.yAxis[1].setCompare(null);
+            if (data.numberOfEvents != null) {
+                chart.yAxis[2].setCompare(null);
+            }*/
+        });
+    });
+    //]]>
+</script>
+<!--Exposure Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+
+            var chart = new Highcharts.StockChart({
+                chart: {
+                    renderTo: 'exposure',
+                    height: 400,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                },
+                title: {
+                    style: {
+                        color: '#000000',
+                        fontFamily: 'Karla',
+                        fontWeight: 'bold',
+                        fontSize: 18
+                    }
+                },
+                exporting: {
+                    buttons: {
+                        printButton: {
+                            enabled: false
+                        },
+                        exportButton: {
+                            enabled: false
+                        }
+                    }
+                },
+                xAxis: {
+                    lineColor: '#000000',
+                    lineWidth: 2
+                },
+                yAxis: {
+                    tickInterval: 0.2,
+                    title: {
+                        text: 'Exposure',
+                        style: {
+                            color: '#000000',
+                            fontSize: 9
+                        }
+                    },
+                    labels: {
+                        align: 'right',
+                        x: -3
+                    },
+                    gridLineColor: 'transparent',
+                    lineColor: '#000000',
+                    lineWidth: 2
+                },
+                rangeSelector: false,
+                scrollbar: false,
+                navigator: false,
+                credits: {enabled: false},
+                plotOptions: {
+                    line: {
+                        lineWidth: 1
+                    }
+                },
+                legend: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 1,
+                    enabled: true
+                },
+                tooltip: {
+                    valueDecimals: 2
+                },
+                series: sampleData.exposureChart
+            });
+        });
+    });
+    //]]>
+</script>
+<!--Return Attributions Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            var yAxisOption =
+                {
+                    labels: {
+                        formatter: function () {
+                            var sign;
+                            var num = Math.round((this.value * 100.0) * 100) / 100;
+                            return "" + num + "%";
+                        }, style: {
+                            fontSize: 7
+                        }
+                    }, title: {
+                        // enabled: true,
+                        text: '',
+                        style: {
+                            fontSize: 7
+                        }
+                    },
+                    tickPixelInterval: 24
+                };
+            var xAxisOption =
+                {
+                    title: {
+                        // enabled: true,
+                        text: '',
+                        style: {
+                            fontSize: 7
+                        }
+                    },
+                    labels: {
+                        style: {
+                            fontSize: 7
+                        }
+                    }
+                };
+
+            var chart = new Highcharts.StockChart({
+                chart: {
+                    renderTo: 'returnAttribution',
+                    height: 300,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                },
+                exporting: {
+                    buttons: {
+                        printButton: {
+                            enabled: false
+                        },
+                        exportButton: {
+                            enabled: false
+                        }
+                    }
+                },
+                title: {
+                    text: ''
+                },
+                rangeSelector: false,
+                scrollbar: false,
+                navigator: false,
+                credits: {enabled: false},
+                yAxis: yAxisOption,
+                xAxis: xAxisOption,
+                plotOptions: {
+                    line: {
+                        lineWidth: 2
+                    }
+                },
+                legend: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 1,
+                    enabled: true,
+                    itemStyle: {
+                        fontSize: 10
+                    }
+                },
+                tooltip: {
+                    valueDecimals: 4
+                },
+                series: sampleData.returnAttributionsChart
+            });
+        });
+    });
+    //]]>
+</script>
+<!--Value At Risk Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            var yAxisOption =
+                {
+                    labels: {
+                        formatter: function () {
+                            var sign;
+                            var num = Math.round((this.value * 100.0) * 100) / 100;
+                            return "" + num + "%";
+                        }, style: {
+                            fontSize: 7
+                        }
+                    }, title: {
+                        enabled: true,
+                        text: 'Max % Loss',
+                        style: {
+                            fontSize: 7
+                        }
+                    },
+                    tickPixelInterval: 24
+                };
+            var xAxisOption =
+                {
+                    title: {
+                        enabled: true,
+                        text: 'Hold Days',
+                        style: {
+                            fontSize: 7
+                        }
+                    },
+                    labels: {
+                        style: {
+                            fontSize: 7
+                        }
+                    }
+                };
+
+            var chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'valueAtRisk',
+                    height: 300,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                },
+                exporting: {
+                    buttons: {
+                        printButton: {
+                            enabled: false
+                        },
+                        exportButton: {
+                            enabled: false
+                        }
+                    }
+                },
+                title: {
+                    text: ''
+                },
+                rangeSelector: false,
+                scrollbar: false,
+                navigator: false,
+                credits: {enabled: false},
+                yAxis: yAxisOption,
+                xAxis: xAxisOption,
+                plotOptions: {
+                    line: {
+                        lineWidth: 2
+                    }
+                },
+                legend: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 1,
+                    enabled: true,
+                    itemStyle: {
+                        fontSize: 10
+                    }
+                },
+                tooltip: {
+                    valueDecimals: 4
+                },
+                series: sampleData.valueAtRiskChart
+            });
+        });
+    });
+    //]]>
+</script>
+<!--Rolling Stats Chart-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            var yAxisOption =
+                {
+                    labels: {
+                        formatter: function () {
+                            var sign;
+                            var num = Math.round((this.value) * 100) / 100;
+                            return "" + num;
+                        }, style: {
+                            fontSize: 7
+                        }
+                    }, title: {
+                        enabled: true,
+                        text: '',
+                        style: {
+                            fontSize: 7
+                        }
+                    },
+                    tickPixelInterval: 24
+
+                };
+            var xAxisOption =
+                {
+                    title: {
+                        text: ''
+                    },
+                    labels: {
+                        style: {
+                            fontSize: 7
+                        }
+                    }
+                };
+
+            var chart = new Highcharts.StockChart({
+                chart: {
+                    renderTo: 'rollingStats',
+                    height: 300,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                },
+                exporting: {
+                    buttons: {
+                        printButton: {
+                            enabled: false
+                        },
+                        exportButton: {
+                            enabled: false
+                        }
+                    }
+                },
+                title: {
+                    text: ''
+                },
+                rangeSelector: false,
+                scrollbar: false,
+                navigator: false,
+                credits: {enabled: false},
+                yAxis: yAxisOption,
+                xAxis: xAxisOption,
+                plotOptions: {
+                    line: {
+                        lineWidth: 2
+                    }
+                },
+                legend: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderWidth: 1,
+                    enabled: true,
+                    itemStyle: {
+                        fontSize: 10
+                    }
+                },
+                tooltip: {
+                    valueDecimals: 4
+                },
+                series: sampleData.rollingStatsChart
+            });
+        });
+    });
+    //]]>
+</script>
+</body>
+</html>
