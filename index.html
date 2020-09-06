@@ -4364,7 +4364,7 @@
 
             tooltip: {
                 formatter: function () {
-                    return '<b>' + getPointCategoryName(this.point, 'x') + '</b> sold <br><b>' +
+                    return '<b>' + getPointCategoryName(this.point, 'x') + '</b> return <br><b>' +
                         this.point.value + '</b> items on <br><b>' + getPointCategoryName(this.point, 'y') + '</b>';
                 }
             },
@@ -4406,7 +4406,7 @@
             },
 
             xAxis: {
-                categories: ['Daily', 'Weekly', 'Monthly', 'Quartely', 'Yearly'],
+                categories: report_data.Charts.returns_dist.xAxis,
                 title: {
                     text: ''
                 }
